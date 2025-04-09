@@ -25,11 +25,11 @@ jobs:
       # Run the autograder script
       - name: Run autograder
         run: |
-          python grade.py  # Make sure grade.py is running correctly and generates results.json
+          python grade.py  # This should run the grade.py file and commit results.json
 
-      # Upload the results.json file as an artifact
-      - name: Upload results.json
-        uses: actions/upload-artifact@v4
+      # Upload results.json as an artifact for debugging (optional)
+      - name: Upload results.json (optional)
+        uses: actions/upload-artifact@v2
         with:
           name: results
           path: results.json
