@@ -29,7 +29,7 @@ jobs:
 
       # Upload the results.json file as an artifact
       - name: Upload results.json
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: results
           path: results.json
